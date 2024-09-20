@@ -4,24 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b473ebee-437b-41b5-a5ea-b4bf2978a0e7" name="Changes" comment="Add db">
-      <change afterPath="$PROJECT_DIR$/blog/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/blog.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/blog/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/blog/post/comment.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/blog/post/detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/blog/post/includes/comment_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/blog/post/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/blog/post/share.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/pagination.html" afterDir="false" />
+    <list default="true" id="b473ebee-437b-41b5-a5ea-b4bf2978a0e7" name="Changes" comment="add comments, tags and similar posts">
+      <change afterPath="$PROJECT_DIR$/blog/sitemaps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/templatetags/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/templatetags/blog_tags.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/blog/post/latest_posts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/blog/post/search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog/post/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/post/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog/post/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/post/list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,19 +58,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ncdnc\PycharmProjects\Blog_site\blog" />
       <recent name="C:\Users\ncdnc\PycharmProjects\Blog_site\templates" />
       <recent name="C:\Users\ncdnc\PycharmProjects\Blog_site\static" />
       <recent name="C:\Users\ncdnc\PycharmProjects\Blog_site" />
-      <recent name="C:\Users\ncdnc\PycharmProjects\Blog_site\blog" />
       <recent name="C:\Users\ncdnc\PycharmProjects\Blog_site\templates\blog" />
     </key>
   </component>
@@ -108,7 +106,23 @@
       <option name="project" value="LOCAL" />
       <updated>1726716064737</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add comments, tags and similar posts">
+      <option name="closed" value="true" />
+      <created>1726765954922</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1726765954922</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add comments, tags and similar posts">
+      <option name="closed" value="true" />
+      <created>1726765967299</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1726765967299</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -125,6 +139,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create Project" />
     <MESSAGE value="Add db" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add db" />
+    <MESSAGE value="add comments, tags and similar posts" />
+    <option name="LAST_COMMIT_MESSAGE" value="add comments, tags and similar posts" />
   </component>
 </project>
