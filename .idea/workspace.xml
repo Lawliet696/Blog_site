@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b473ebee-437b-41b5-a5ea-b4bf2978a0e7" name="Changes" comment="add bootstrap">
+    <list default="true" id="b473ebee-437b-41b5-a5ea-b4bf2978a0e7" name="Changes" comment="rm env">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -136,7 +137,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727086714839</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="rm env">
+      <option name="closed" value="true" />
+      <created>1727086932800</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1727086932800</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -157,6 +166,7 @@
     <MESSAGE value="text search" />
     <MESSAGE value="Registration/Authorization" />
     <MESSAGE value="add bootstrap" />
-    <option name="LAST_COMMIT_MESSAGE" value="add bootstrap" />
+    <MESSAGE value="rm env" />
+    <option name="LAST_COMMIT_MESSAGE" value="rm env" />
   </component>
 </project>
