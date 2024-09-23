@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 import os.path
 from pathlib import Path
 
-from django.conf.global_settings import STATICFILES_DIRS
+from django.conf.global_settings import STATICFILES_DIRS, LOGOUT_REDIRECT_URL
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig',
+    'accounts.apps.AccountsConfig',
     'taggit',
     'django.contrib.sites',
     'django.contrib.sitemaps',
@@ -136,6 +137,16 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+LOGIN_URL = '/accounts/login/'
+LOGIN_REDIRECT_URL = '/'
+#LOGOUT_REDIRECT_URL = '/'
+
+
+MEDIA_ROOT = BASE_DIR/'media'
+MEDIA_URL = '/media/'
+
+
+SESSION_COOKIE_AGE = 60 * 60 * 24 * 30
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
