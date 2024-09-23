@@ -14,7 +14,7 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('css/', include('css.urls'))
 """
-from django.urls import path, include
+from django.urls import path, include, re_path
 from django.contrib import admin
 from django.contrib.sitemaps.views import sitemap
 from blog.sitemaps import PostSitemap
@@ -32,4 +32,5 @@ urlpatterns = [
          name='django.contrib.sitemaps.views.sitemap'),
     path('accounts/', include('accounts.urls', namespace='accounts')),
     path("accounts/", include("django.contrib.auth.urls")),
+    re_path(r'^oauth/', include('social_django.urls', namespace='social')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
