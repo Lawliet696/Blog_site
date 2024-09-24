@@ -51,7 +51,35 @@ INSTALLED_APPS = [
     'django.contrib.postgres',
     'social_django',
     'django_bootstrap5',
+    'rest_framework',
+    'blog_api.apps.BlogApiConfig',
+    'django_filters',
+    'rest_framework.authtoken',
+    'drf_spectacular',
 ]
+
+REST_FRAMEWORK = {
+    "DEFAULT_PERMISSION_CLASSES": [
+        "rest_framework.permissions.IsAuthenticated",
+    ],
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 3,
+
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.SessionAuthentication',
+        "rest_framework.authentication.TokenAuthentication",
+    ),
+
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+
+}
+
+SPECTACULAR_SETTINGS = {
+    "TITLE": "Blog API Project",
+    "DESCRIPTION": "A sample blog",
+    "VERSION": "1.0.0",
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

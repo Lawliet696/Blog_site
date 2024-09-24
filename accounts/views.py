@@ -3,8 +3,6 @@ from django.contrib.auth.views import LoginView, PasswordChangeView
 from django.contrib.messages.views import SuccessMessageMixin
 from django.urls import reverse_lazy
 from django.views import generic
-from django.views.decorators.http import require_POST
-
 from .forms import SignUpForm, LoginForm, UpdateUserForm, UpdateProfileForm
 from django.shortcuts import render, redirect
 from django.contrib import messages
